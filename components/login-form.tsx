@@ -69,7 +69,7 @@ export function LoginForm({
                   <span>Login with Google</span>
                 </Button>
                 <FieldDescription className="text-center">
-                  Don&apos;t have an account? <a href="#">Sign up</a>
+                  Don&apos;t have an account? <a href="/auth/signup">Sign up</a>
                 </FieldDescription>
               </Field>
             </FieldGroup>
