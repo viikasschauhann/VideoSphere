@@ -1,3 +1,4 @@
+import Image from "next/image"
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
 import {
@@ -36,7 +37,7 @@ export function LoginForm({
                 <Input
                   id="email"
                   type="email"
-                  placeholder="m@example.com"
+                  placeholder="john@gmail.com"
                   required
                 />
               </Field>
@@ -53,9 +54,19 @@ export function LoginForm({
                 <Input id="password" type="password" required />
               </Field>
               <Field>
-                <Button type="submit">Login</Button>
-                <Button variant="outline" type="button">
-                  Login with Google
+                <Button className="cursor-pointer" type="submit">Login</Button>
+                <Button
+                  variant="outline"
+                  type="button"
+                  className="mt-2 flex items-center justify-center gap-2 cursor-pointer"
+                >
+                  <Image
+                    src="/google.svg"
+                    alt="Google logo"
+                    width={18}
+                    height={18}
+                  />
+                  <span>Login with Google</span>
                 </Button>
                 <FieldDescription className="text-center">
                   Don&apos;t have an account? <a href="#">Sign up</a>
